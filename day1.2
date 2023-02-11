@@ -12,3 +12,18 @@ def sumsquare(l):
     l3.append(oddsquare)
     evensquare=sum([y**2 for y in even])
     l3.append(evensquare)
+    return l3
+n=int(input("Enter the number of elements:"))
+l1=[]
+while True:
+   
+    num=int(input("Enter the element="))
+    if num=="":
+        break
+    else:
+        l1.append(num)
+        if len(l1)==n:
+            break
+print(l1)
+
+print(sumsquare(l1))
